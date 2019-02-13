@@ -1,0 +1,33 @@
+Barry Issagha
+
+*********les selecteurs complexe utilisé***********
+-header figure:first-of-type img: selectionne l'image contenu dans la premier balise figure et lui meme contenue dans la balise header
+	,c'est l'image se trouvant totalement a droite dans header
+
+-header figure:nth-child(3) img: selectionne l'image contenu dans la balise figure qui est elle meme contenu dans la balise header en etant sont troisieme fils
+	,c'est l'image se trouvant pret de la premiere image
+
+-body>div>article img: selectionne l'image se trouvant dans la balise article ce dernier etant le fils directe de la balise div et la balise div etant le fils direct de la balise body
+	,c'est l'image se trouvant dans le premier bloc artice
+
+-tbody td:last-of-type::after: selectionne la derniere balise td se trouvant dans la balise tbody
+	,c'est toute la partie concerné par femme en un pourcentage sans la celulle pour le total
+
+-nav>ol li:last-child:hover ol li:selectionne lorsque la souris est sur la dernière balise li se trouvant lui meme dans la balise ol qui est directement fils de nav toute les balise li se trouvant dans ol
+	,c'est ce qui fait que lorque l'on envoie la souris dans le menu fixe sur la region naturel on voie apparaitre les trois autres regions naturel de la guinee
+
+
+*********les regles media-queries utilisées***********
+
+- pour un ecran ayant une taille maximal de 1205px: le titre la Guinee desend plus bas, et la boite de navigation pousse vers la gauche de -4px
+
+- pour un ecran ayant une taille maximal de 950px: dans le sommaire l'image de fond occupe toute la largeur de son conteneur, et le titre se positionne en bas a gauche de son conteneur
+
+- pour un ecran ayant une taille maximal de 820px: la navigation se place totalement a gauche et lorsqu'on envoie la souris sur la navigation elle ressort vers la droite de quelque pixel, de plus la balise article occupe toute la largeur de l'elemnt body
+
+- pour un ecran ayant une taille maximale de 700px: toute les images ainsi que celui de l'image de fond est remplacé par l'image de fond du div contenue dans l'element header et aucupe toute la largeur de l'element header
+
+- pour l'impression de la page: toute les images disparaisse et la l'element body occupe tout le corps
+
+*********le fonctionnement**********
+- vous verez que les images et les boites s'adapte faicilement lorsqu'on augmente ou dimunie la largeur de la page

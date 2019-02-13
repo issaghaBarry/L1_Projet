@@ -1,0 +1,133 @@
+header div{
+  background-color: white;
+}
+header div.basse{
+  background-image: url("../images/basse_guinee_carte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header div.haute{
+  background-image: url("../images/haute_guinee_carte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header div.moyenne{
+  background-image: url("../images/moyenne_guinee_carte.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header div h1{
+  text-align: left;
+  margin-left: 56.5%;
+  margin-top: 80px;
+  font-size: 36px;
+}
+header div.moyenne h1{
+  font-size: 30px;
+  margin-top: 90px
+}
+body div a img{
+  width: 50px;
+  height: 70px;
+}
+header+div:first-of-type, body>div:nth-child(3),body>div.gauche{
+  width: 48px;
+  height: 60px;
+  position: relative;
+  left: 58%;
+  top: 9px;
+}
+body>div:nth-child(3){
+  left: 90%;
+  top: -46.5px 
+}
+nav{
+  margin-top: 75px;
+}
+body div.total{
+  margin-top: -35px;
+}
+body>div#gauche{
+  left: 25%;
+}
+body>div.gauche{
+  top: -100px
+}
+body div.gauche+.total{
+   margin-top: -91px;
+}
+tbody td:last-of-type::after,tfoot td:last-of-type::after{
+   content:"%"
+}
+table{
+  margin-left: 50px;
+  margin-bottom: 12px;
+  width: 80%;
+}
+table caption{
+  border: 3px solid;
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+colgroup#pre{
+  background-color:  #E0FFFF;
+}
+colgroup#manage{
+  background-color: #E0FFF2;
+}
+colgroup#habitant{
+  background-color: #EAFAFA;
+}
+colgroup#pourcen{
+  background-color: #A0FFFF
+}
+
+
+
+
+
+@media screen and (max-width: 1205px){
+  body header>div h1{
+    font-size: 40px;
+    margin-top:70px;
+  }
+}
+
+
+@media screen and (max-width:1100px){
+  header div.basse{
+    background-size: cover;
+  }
+  header div.haute{
+    background-size: cover;
+  }
+  header div.moyenne{
+    background-size: cover;
+  }
+}
+
+
+@media screen and (max-width: 820px){
+  header+div:first-of-type{
+    left: 45%;
+  }
+  body>div#gauche{
+    left: 0%;
+  }
+  body header>div h1{
+    margin-left: 30px;
+  }
+}
+
+
+
+@media print{
+  header div h1{
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 40px;
+  }
+  header+div:first-of-type, header+div:nth-of-type(2), div#gauche{
+    display: none;
+  }
+}

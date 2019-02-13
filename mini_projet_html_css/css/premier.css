@@ -1,0 +1,174 @@
+html{
+   background-color: lightslategray;
+}
+body{
+   background-color: lightgray;
+   width: 85%;
+   margin:auto;
+}
+header{
+   border: 1px dotted white;
+   position: relative;
+   height: 200px;
+   background-image: url("../images/drapeau_de_guinee.png");
+}
+header figure img{
+  width: 25.3%;
+  height: 200px;
+  
+}
+header figure:first-of-type img{
+   position: absolute;
+   left: 74.6%;
+   top: 0%;
+}
+header figure:nth-child(3) img{
+   position: absolute;
+   left: 49.25%;
+   top:0%;
+}
+header>div{
+   border: 1px dotted white;
+   width: 35%;
+   height: 160px;
+   margin-top: 20px;
+   margin-left: 30px;
+}
+body div.total{
+   width: 75%;
+   margin-left: 24.69%;
+   border-radius: 20px;
+}
+body>div>article img{
+   width: 200px;
+   height: 180px;
+   float: left;
+}
+nav{
+   width: 16%;
+   position: fixed;
+   left: 90px;
+   top: 200px;
+   margin-left: 50px;
+}
+nav ol{
+   list-style-type: none;
+}
+nav ol li{
+   margin-left: -40px;
+   background-color: #B4BAB9;
+   box-shadow: 0px 0px 4px 2px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+}
+article{
+   background-color: #B4BAB9;
+   border: 1px solid;
+   margin-bottom: 16px;
+   border-radius: 20px;
+   padding-left: 10px;
+   box-shadow: 0px 0px 4px 2px;
+}
+body article:first-of-type img{
+   padding:10px;
+}
+table{
+    border-collapse: collapse;
+    border-spacing : 1px;
+}
+table td{
+   text-align: right;
+   border: 3px solid;
+}
+table thead td, tfoot td:first-of-type, tbody tr td:first-of-type{
+   text-align: left;
+}
+footer{
+   border: 3px solid;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   background-color: #B4BAB9;
+   padding-left: 70px;
+}
+
+
+
+@media screen and (max-width: 1205px){
+  body header>div h1{
+    font-size: 50px;
+    margin-top:100px;
+  }
+   nav{
+      margin-left: -4px;
+   }
+}
+
+
+@media screen and (max-width: 820px){
+   nav{
+      margin-left: -200px;
+      background-color: initial;
+      box-shadow: initial;
+   }
+   nav li{
+      background-color: #40A497;
+      margin-bottom: 3px;
+      box-shadow: 0px 0px 4px 2px;
+   }
+   nav:hover{
+      margin-left: -90px;
+      transition: margin-left 1.5s;
+   }
+   body div.total{
+      margin-left: 0%;
+      width: 100%;
+   }
+}
+
+
+@media print{
+   nav{
+      display: none;
+   }
+   body div.total{
+      margin-left: 0%;
+      width: 100%;
+   }
+   body{
+      width: 100%;
+   }
+   body>div>article img,header figure:first-of-type img,header figure:nth-child(3) img{
+      display: none;
+   }
+   header>div{
+      width: 100%;
+      margin-top: 0px;
+      margin-left: 0px;
+   }
+   footer{
+      display: none;
+   }
+}
+
+
+
+@media screen and (max-width: 700px){
+   header{
+      background-image: none;
+   }
+   header figure:nth-child(3) img{
+      display: none;
+   }
+   header figure:first-of-type img{
+      display: none;
+   }
+   header>div{
+      width: 100%;
+      margin-left: 0px;
+      height: 100%;
+      margin-top: 0px;
+   }
+   nav{
+      margin-left: -175px;
+   }
+}
